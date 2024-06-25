@@ -8,7 +8,7 @@ import Testimg2 from "../Assets/Images/sathik.jpg";
 import Testimg3 from "../Assets/Images/Akthar.jpg";
 import Crudimg from "../Assets/Images/Crudimg.png";
 import Techimg from "../Assets/Images/Techimg.jpg";
-import Resume from "../Assets/Images/resume.pdf";
+import Resume from "../Assets/Images/Resume.pdf";
 import { FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import { SiJavascript, SiReact, SiMongodb, SiGithub } from "react-icons/si";
 import { ImQuotesLeft, ImLinkedin } from "react-icons/im";
