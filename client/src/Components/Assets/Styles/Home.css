@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+
+/* ================================
+ Common Styles
+ ================================ */
+body {
+  overflow-x: hidden;
+}
+.container-main {
+  overflow-y: hidden;
+}
+.footer-section {
+  overflow-y: hidden;
+}
+* {
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.main-section,
+.about-section,
+.project-section,
+.footer-section {
+  background-color: #d7cbbd;
+}
+.strength-section,
+.education-section {
+  background-color: #272e30;
+}
+
+/* =====================
+ main-bg-CSS 
+===================== */
+
+.menu-icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+#lora-nav {
+  color: black;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+#lora-nav:hover {
+  color: #008080;
+}
+.sub-name {
+  font-size: 38px;
+  font-weight: 400;
+  font-style: normal;
+}
+.main-name {
+  font-family: "Lora", serif;
+  font-size: 60px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.button12 {
+  cursor: pointer;
+  background-color: #000;
+  padding: 15px 20px;
+  line-height: 64px;
+  position: relative;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 0;
+  background: #272e30;
+}
+.button12 span {
+  color: #fff;
+  display: inline-block;
+  font: bold 18px/66px Arial;
+  transform: scaleX(0.6);
+  letter-spacing: 3px;
+  transform-origin: center left;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.button12 em {
+  position: absolute;
+  height: 1px;
+  background: #fff;
+  width: 47%;
+  right: 23px;
+  top: 50%;
+  transform: scaleX(0.25);
+  -webkit-transform: scaleX(0.25);
+  transform-origin: center right;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.button12:before,
+.button12:after {
+  content: "";
+  background: #fff;
+  height: 50%;
+  width: 0;
+  position: absolute;
+  transition: 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition: 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.button12:before {
+  top: 0;
+  left: 0;
+  right: auto;
+}
+.button12:after {
+  bottom: 0;
+  right: 0;
+  left: auto;
+}
+.button12:hover:before {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+.button12:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.button12:hover span {
+  color: #000;
+}
+.button12:hover em {
+  background: #000;
+  transform: scaleX(0.51);
+  transform: scaleX(0.51);
+}
+
+/* =====================
+Strength & About Section CSS
+===================== */
+
+.section-title {
+  color: gray;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.inner-para {
+  font-size: 13px;
+}
+.card-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px black;
+}
+.lang-name {
+  font-family: "Lora", serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+.resume-download {
+  background-color: #272e30;
+}
+.btnfos {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  margin: auto;
+  text-decoration: none;
+  width: 100%;
+}
+.btnfos-1 svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 45px;
+}
+.btnfos-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-dasharray: 422, 0;
+}
+
+.btnfos-1:hover {
+  letter-spacing: 2px;
+}
+.btnfos-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#card-animate {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#card-animate:hover {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+/* =====================
+Education & Testimonial Section CSS
+===================== */
+
+.education-inner {
+  padding-bottom: 300px;
+}
+.education-section {
+  position: relative;
+}
+.testimonial-section {
+  position: absolute;
+  bottom: -180px;
+}
+.quote {
+  color: #5f584a;
+}
+.testi-para {
+  color: #8b8b8b;
+  font-size: 12px;
+}
+.testi-name {
+  color: #8b8b8b;
+}
+.testi-pos {
+  font-size: 11px;
+}
+.testimonial-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 240px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px black;
+  overflow: hidden;
+  height: 380px;
+}
+.testimonial-card .layer {
+  position: absolute;
+  top: calc(100% - 3px);
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #a69d8c;
+  z-index: 1;
+  transition: 0.5s;
+}
+.testimonial-card:hover .layer {
+  top: 0;
+}
+.testimonial-card:hover .testi-para,
+.testimonial-card:hover .testi-name,
+.testimonial-card:hover .testi-pos,
+.testimonial-card:hover .quote {
+  color: white;
+}
+/* .button {
+  display: inline-block;
+  padding: 20px 50px;
+  margin: 20px 0;
+  position: relative;
+  color: #ecf0f1;
+} */
+
+/* =====================
+Project Section CSS
+===================== */
+.projects {
+  margin-top: 14rem;
+}
+.card-img {
+  height: 65%;
+  width: 100%;
+}
+.blinking {
+  position: absolute;
+  font-weight: bold;
+  right: 10px;
+  bottom: 5px;
+  animation: blinkingText 1.2s infinite;
+}
+@keyframes blinkingText {
+  0% {
+    color: #ff0000;
+  }
+  49% {
+    color: #ff0000;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+/* =====================
+Footer Section CSS
+===================== */
+
+.phone p a,
+.mail p a {
+  text-decoration: none;
+  color: #8e7e6f;
+}
+.personal-info {
+  width: 30%;
+}
+.social-icon {
+  color: white;
+}
+.social-icon:hover {
+  color: #8e7e6f;
+}
+.contact-form {
+  width: 70%;
+  padding: 0px 50px;
+}
+.form-control {
+  border: none !important;
+  border-radius: none !important;
+  border-bottom: 1px solid #000 !important;
+  border-radius: 0 !important;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.footer-button {
+  background-color: #8e7e6f;
+  font-family: "Lora", serif;
+  border: none;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+.btn-text {
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+.footer-button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.footer-button:after {
+  content: "»";
+  position: absolute;
+  font-size: 30px;
+  opacity: 0;
+  top: -4px;
+  right: -50px;
+  transition: 0.3s;
+}
+
+.footer-button:hover {
+  padding-right: 27px;
+  padding-left: 8px;
+}
+
+.footer-button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+/* ================================
+Styles for screens smaller than md 
+================================ */
+@media (max-width: 767.98px) {
+  .testimonial-section {
+    position: relative;
+    bottom: auto;
+  }
+  .education-inner {
+    padding-bottom: 0px;
+  }
+  .projects {
+    margin-top: 0px;
+  }
+  .personal-info {
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 0px;
+  }
+}
