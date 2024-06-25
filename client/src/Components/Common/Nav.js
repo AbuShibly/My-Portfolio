@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import Logo from "../Assets/Images/image.png";
+import Logo from "../Assets/Images/FS-Logo.png";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import "../Assets/Styles/Home.css";
 
@@ -19,7 +19,7 @@ function NavigationBar() {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <img src={Logo} alt="Logo" width={25} />
+          <img src={Logo} alt="Logo" width={45} />
         </Navbar.Brand>
 
         <HiOutlineMenuAlt3

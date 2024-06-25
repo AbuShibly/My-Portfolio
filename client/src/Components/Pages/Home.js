@@ -66,7 +66,7 @@ const Home = () => {
         autoClose: 3000,
         closeOnClick: true,
         pauseOnHover: true,
-        theme: "dark",
+        theme: "light",
       });
       return;
     }
@@ -77,12 +77,25 @@ const Home = () => {
         autoClose: 3000,
         closeOnClick: true,
         pauseOnHover: true,
-
-        theme: "dark",
+        theme: "light",
       });
       return;
     }
 
+    // Dummy Message
+    if (name || email || message) {
+      toast.info("Message Sent Successfull", {
+        position: "top-right",
+        type: "success",
+        autoClose: 3000,
+        closeOnClick: true,
+        pauseOnHover: true,
+        theme: "light",
+      });
+      return;
+    }
+
+    // Data Submission
     const URL = "http://localhost:5000/post";
     await axios
       .post(URL, formData)
@@ -95,7 +108,7 @@ const Home = () => {
             autoClose: 3000,
             closeOnClick: true,
             pauseOnHover: true,
-            theme: "dark",
+            theme: "light",
           });
         }
       })
