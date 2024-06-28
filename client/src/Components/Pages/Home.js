@@ -142,7 +142,7 @@ const Home = () => {
           <Container>
             <Row className="pt-5">
               <Col>
-                <h3 className="sub-name">Hello, I'am</h3>
+                <h3 className="sub-name">Hello, I'm</h3>
                 {/* <h1 className="main-name">Abu Shibly</h1> */}
                 <div class="dropping-texts main-name mb-5">
                   <div>Mohamed</div>
