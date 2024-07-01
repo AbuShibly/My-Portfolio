@@ -1,16 +1,11 @@
-import { Routes, Route } from "react-router-dom";
-import NavigationBar from "./Components/Common/Nav";
-import Home from "./Components/Pages/Home";
+import React from "react";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <NavigationBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </>
+    <div>
+      <h1>Vintage Tech MarketPlace (Client)</h1>
+    </div>
   );
-}
+};
 
 export default App;
